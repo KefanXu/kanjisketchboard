@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=GFS+Didot" rel="stylesheet">    
+    <title>Kanji Sketch Board</title>
+  </head>
+  <body>
+    <div id="splash">
+      <div class="content">
+        <h1>Now let's try to create our own characters!</h1>
+        <p>
+<!--           <h1>Write stroke of Kanji character and the AI will finish the rest for you! Reload each step and save your works!</h1>
+ -->        </p>
+          
+        <button class="box big" id="btnGo" width="160" height="160">
+          GO!
+        </button>
+
+      </div>
+    </div>
+      <header>
+        <div class="wrapper top">
+          <div>
+            <h1></h1>
+          </div>
+          <div class="controls">
+            <button class="box" id="btnHelp" alt="show help" disabled>
+                  <img src="img/goback.png" width="0" height="0"></img>
+            </button>
+            <button class="box" id="btnClear" alt="clear drawing">
+              <img src="img/clear.png" width="60" height="60"></img>
+            </button>
+            <button class="box" id="btnRetry" alt="retry magic drawing">
+              <img src="img/reload.png" width="60" height="60"></img>
+            </button> 
+            <button class="box" id="btnSave" alt="save sketch">
+              <img src="img/save.png" width="55" height="55"></img>
+            </button>
+
+          </div>
+        </div>
+        
+        <div class="wrapper">
+          <div>
+            <h1></h1>
+          </div>
+          <div id="colorsContainer">
+
+          </div>
+        </div>
+      </header>
+      
+      <div id="sketch" class="loading"></div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@magenta/sketch@0.1.3/dist/magentasketch.min.js"></script>
+  <script src="script.js"></script>
+</html>
